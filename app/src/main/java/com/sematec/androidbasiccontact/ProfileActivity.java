@@ -21,7 +21,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
+        txtHello = findViewById(R.id.txtHello);
 
         edtName=findViewById(R.id.edtName);
        final EditText edtFamilyName=findViewById(R.id.edtFamilyName);
@@ -30,6 +30,14 @@ public class ProfileActivity extends AppCompatActivity {
        final EditText edtAddress=findViewById(R.id.edtAddress);
        final Button btnDone = findViewById(R.id.btnDone);
        txtHello=findViewById(R.id.txtHello);
+       String num= edtPhone.getText().toString();
+       PreferenceManager.getDefaultSharedPreferences(ProfileActivity.this )
+               .edit()
+               .putString("phone" , num)
+               .apply();
+
+
+
 
 
 
@@ -42,6 +50,7 @@ public class ProfileActivity extends AppCompatActivity {
 
 
         txtHello.setText( " Hello " + name);
+
 
 
 

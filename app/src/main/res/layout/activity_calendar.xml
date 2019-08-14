@@ -1,9 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Calendar">
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txtFirstQuarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_quartet"
+        android:textColor="@color/colorAccent"
+        />
+    <View
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"
+        />
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/txtFirst"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:text="@string/first_month"
+            android:background="@color/blue"
+            android:gravity="center"
 
-</android.support.constraint.ConstraintLayout>
+            />
+
+        <ImageView
+            android:id="@+id/imgFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@mipmap/download"
+            android:scaleType="fitStart"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtSecond"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:text="@string/first_month"
+            android:background="@color/blue"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/imgSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@mipmap/download"
+            android:scaleType="fitStart"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/txtThird"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:text="@string/first_month"
+            android:background="@color/blue"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/imgThird"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@mipmap/download"
+            android:scaleType="fitStart"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtSecondQuarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_quartet"
+        android:textColor="@color/colorAccent"
+        />
+    <View
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:text="@string/first_month"
+            android:background="@color/blue"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/imgFourth"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@mipmap/download"
+            android:scaleType="fitStart"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:text="@string/first_month"
+            android:background="@color/blue"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/imgFIfth"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@mipmap/download"
+            android:scaleType="fitStart"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

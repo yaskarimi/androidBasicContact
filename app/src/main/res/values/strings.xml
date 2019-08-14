@@ -2,4 +2,12 @@
     <string name="app_name">androidBasicContact</string>
     <string name="profile">profile</string>
     <string name="call">call</string>
+    <string name="drawer_layout">drawer Layout</string>
+    <string name="first_month">JAN</string>
+    <string name="second_month">FEB</string>
+    <string name="third_month">MAR</string>
+    <string name="fourth_month">APR</string>
+    <string name="fifth_month">MAY</string>
+    <string name="first_quartet">First Quarter</string>
+    <string name="second_quartet">Second Quarter</string>
 </resources>
